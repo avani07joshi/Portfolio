@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #0a2d3c;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+
+#home {
+    background-color: #084688;
+    text-align: center;
+}
+
+#poems {
+    background-color: #2b65d7;
+}
+
+#about {
+    background-color: #6f91cf;
+}
+
+
+
+#contact {
+    background-color: #82a9dc;
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.poem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.poem {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.poem:hover {
+    transform: translateY(-5px);
+}
+
+.poem h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.poem .snippet {
+    font-size: 16px;
+    color: #666;
+}
+
+.poem .full-text {
+    display: none;
+    margin-top: 10px;
+}
+
+.poem:after {
+    content: "+";
+    font-size: 20px;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.poem:hover:after {
+    transform: rotate(45deg);
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.about-photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
